@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alunos - EdiCursos</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/principal.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/componente.css" />
+    <link rel="stylesheet" href="css/mensagens.css" />
+    <script type="text/javascript" src="js/calcula-media.js" defer></script>
+    <script type="text/javascript" src="js/form-aluno.js" defer></script>
+    <script type="text/javascript" src="js/excluir-aluno.js" defer> </script>
+    <script type="text/javascript" src="js/consultar-alunos.js" defer></script>
+    <script type="text/javascript" src="js/salvar-aluno-api.js" defer></script>
+
+
+
+  </head>
+
+  <body>
+    <header>
+      <div class="caixa">
+        <h1 class="titulo-pagina">EdiCursos</h1>
+      </div>
+    </header>
+    <main>
+      <div class="caixa">
+        <h2 class="titulo-h2">Lista de alunos</h2>
+
+<!--Botão  de consulta de alunos-->
+        <div class="row">
+          <div class="col-10 col-s-12"></div>
+          <div class="col-2 col-s-12">
+            <button id="btnConsultarAluno" class="btn btn-info">Consultar Alunos</button>
+          </div>
+        </div>
+
+        <table id="tabela-alunos">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nome</th>
+              <th>Trabalho</th>
+              <th>Prova</th>
+              <th>Média</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+           
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <section>
+      <div class="caixa">
+        <h2 class="titulo-h2">
+          Cadastro de Alunos
+        </h2>
+        <form id="frmAluno">
+          <div class="row">
+            <div class="col-12 col-s-12" id="divMensagens">
+              <!--Div para as  mensagens do formulário-->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4 col-s-12">
+              <label for="txtNome" class="rotulo">Nome:</label>
+              <input type="text" id="txtNome" name="nome" 
+              placeholder="Informe o nome do aluno" maxlength="50" required class="caixa-texto" />
+
+            </div>
+
+            <div class="row">
+              <div class="col-4 col-s-12">
+                <label for="txtTrabalho" class="rotulo">Nota Trabalho:</label>
+                <input type="number" id="txtTrabalho" name="trabalho" 
+                placeholder="Informe a nota do trabalho" required class="caixa-texto" step="0.1"/>
+  
+              </div>
+
+              <div class="row">
+                <div class="col-4 col-s-12">
+                  <label for="txtProva" class="rotulo">Nota Prova:</label>
+                  <input type="number" id="txtProva" name="prova" 
+                  placeholder="Informe a nota da prova" maxlength="50" required class="caixa-texto" step="0.1" />
+    
+                </div>
+
+          </div>
+          <div class="row">
+            <div class="col-10 col-s-12"></div>
+            <div class="col-2 col-s-12">
+              <button id="btnSalvarAluno" class="btn btn-info">Salvar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script></script>
+  </body>
+</html>
